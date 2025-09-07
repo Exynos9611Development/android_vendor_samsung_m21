@@ -18,26 +18,6 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/camera.exynos9611.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhardware",
-                "libutils",
-                "libion",
-                "libion_exynos",
-                "libhwjpeg",
-                "libnativewindow",
-                "libexynoscamera3",
-                "android.hardware.graphics.allocator@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/hw/camera.exynos9611.so",
@@ -72,18 +52,6 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libSEF.quram.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libSEF.quram.so",
@@ -109,38 +77,6 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libexynoscamera3.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libion",
-                "libui",
-                "libcamera_metadata",
-                "libexynosutils",
-                "libhwjpeg",
-                "libexynosv4l2",
-                "libion_exynos",
-                "libsync",
-                "libcsc",
-                "android.hardware.graphics.allocator@2.0",
-                "android.hardware.graphics.mapper@2.0",
-                "libGrallocWrapper",
-                "libremosaic_daemon",
-                "libsecnativefeature",
-                "libuniplugin",
-                "libsensorlistener",
-                "libuniapi",
-                "libSEF.quram",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libexynoscamera3.so",
@@ -186,22 +122,6 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libremosaic_daemon.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libbinder",
-                "libion",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libremosaic_daemon.so",
@@ -231,20 +151,6 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libsecnativefeature.so",
-            ],
-            shared_libs: [
-                "libexpat",
-                "libcutils",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libsecnativefeature.so",
@@ -272,22 +178,6 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libsensorlistener.so",
-            ],
-            shared_libs: [
-                "libshim_sensorndkbridge",
-                "libcutils",
-                "libutils",
-                "libsensorndkbridge",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libsensorlistener.so",
@@ -317,19 +207,6 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libuniapi.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libuniapi.so",
@@ -356,19 +233,6 @@ cc_prebuilt_library_shared {
         none: true,
     },
     target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libuniplugin.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/libuniplugin.so",
