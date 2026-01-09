@@ -7,6 +7,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/samsung/m21/proprietary/vendor/etc/init/fingerprint_common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint_common.rc \
+    vendor/samsung/m21/proprietary/vendor/etc/init/init.nfc.samsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.nfc.samsung.rc \
+    vendor/samsung/m21/proprietary/vendor/etc/nfc/sec_s3nrn82_rfreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/sec_s3nrn82_rfreg.bin \
     vendor/samsung/m21/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/samsung/m21/proprietary/vendor/firmware/APBargeIn_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBargeIn_AUDIO_SLSI.bin \
     vendor/samsung/m21/proprietary/vendor/firmware/APBiBF_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBiBF_AUDIO_SLSI.bin \
@@ -16,6 +18,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/m21/proprietary/vendor/firmware/fimc_is_lib.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_lib.bin \
     vendor/samsung/m21/proprietary/vendor/firmware/fimc_is_rta.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_rta.bin \
     vendor/samsung/m21/proprietary/vendor/firmware/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc_fw.bin \
+    vendor/samsung/m21/proprietary/vendor/firmware/nfc/sec_s3nrn82_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/sec_s3nrn82_firmware.bin \
     vendor/samsung/m21/proprietary/vendor/firmware/rtdsp_param.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/rtdsp_param.bin \
     vendor/samsung/m21/proprietary/vendor/firmware/setfile_4ha.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_4ha.bin \
     vendor/samsung/m21/proprietary/vendor/firmware/setfile_gc5035.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_gc5035.bin \
@@ -41,22 +44,22 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/m21/proprietary/vendor/tee/tui/resolution_common/ID00000100:$(TARGET_COPY_OUT_VENDOR)/tee/tui/resolution_common/ID00000100
 
 PRODUCT_PACKAGES += \
+    libswdap \
     camera.exynos9611 \
     libSEF.quram \
+    libbauthserver \
+    libbauthtzcommon \
+    libegis_fp_normal_sensor_test \
     libexynoscamera3 \
+    libgf_in_system_lib \
+    libqfp_sensortest \
     libremosaic_daemon \
+    libremosaiclib_s5kgm2 \
     libsecnativefeature \
     libsensorlistener \
+    libsynaFpSensorTestNwd \
     libuniapi \
     libuniplugin \
     sensors.grip \
     sensors.inputvirtual \
-    sensors.sensorhub \
-    libswdap \
-    libbauthserver \
-    libbauthtzcommon \
-    libegis_fp_normal_sensor_test \
-    libgf_in_system_lib \
-    libqfp_sensortest \
-    libremosaiclib_s5kgm2 \
-    libsynaFpSensorTestNwd
+    sensors.sensorhub
