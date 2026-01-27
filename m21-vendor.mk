@@ -55,7 +55,6 @@ PRODUCT_PACKAGES += \
     libqfp_sensortest \
     libremosaic_daemon \
     libremosaiclib_s5kgm2 \
-    libsecnativefeature \
     libsensorlistener \
     libsynaFpSensorTestNwd \
     libuniapi \
